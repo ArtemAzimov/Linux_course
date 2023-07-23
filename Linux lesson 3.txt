@@ -1,0 +1,12 @@
+4. sudo visudo
+	>> smirnov ALL=(ALL) ALL
+
+5. mkdir devFolder
+	chmod g+s devFolder #(group+set GID)
+
+6. mkdir subdir
+	chmod +t subdir #(sticky bit)
+
+7. su user
+	mkdir hidden
+	chmod 710 hidden/ #(drwx--x---)

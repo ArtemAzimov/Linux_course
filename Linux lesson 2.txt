@@ -1,0 +1,22 @@
+2.  cat > file1.txt
+	:~$ text1
+	cat > file2.txt
+	:~$ text2
+	cat file1.txt file2.txt >> file3.txt
+	mv file3.txt united.txt
+
+4. ls -lad ./.* | grep -v ^total | grep -v ^d | wc -l
+
+5. cat /etc/* 2>stderr
+	cat stderr | wc -l
+	:~$ 138
+
+7. lsof /dev | less // ?????
+
+8. mkdir 20{18..23}
+	for i in 20{18..23}
+	do
+	mkdir $i/{01..12}
+	done
+
+9. ls -la | tail -n +4 | cut -b -10 | sort | uniq
